@@ -8,7 +8,7 @@ const fetcher = async (url) => {
 }
 
 export default function Types() {
-    const type = "normal"
+    const type = "fire"
 
     const { data, error, isLoading, isValidating } = useSWR(`/api/types/${type}`, fetcher)
     if (isLoading) return <div>Loading</div>
